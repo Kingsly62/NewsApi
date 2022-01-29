@@ -33,7 +33,24 @@ def index():
     return render_template('index.html', context=mylist)
 
 
-@app.route('/bbc.html')
+@app.route('/home')
+def home():
+
+    return render_template('home.html')
+
+
+@app.route('/contact')
+def contact():
+
+    return render_template('contact.html')
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/bbc')
 def bbc():
     newapi = NewsApiClient(api_key="0c6d46cd105a4eec899d842768e0a84e")
     topheadlines = newapi.get_top_headlines(sources="New York Times")
@@ -51,7 +68,7 @@ def bbc():
         news.append(myarticles['title'])
         desc.append(myarticles['description'])
         img.append(myarticles['urlToImage'])
-        time.append(myarticles['"publishedAt'])
+        time.append(myarticles['publishedAt'])
 
         mylist = zip(desc, news, img, time)
     return render_template('bbc.html', context=mylist)

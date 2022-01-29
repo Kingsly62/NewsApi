@@ -1,0 +1,46 @@
+h1{
+    color: green;
+}
+
+.navbar{
+    gap: 18px;
+    float: left;
+    margin-left: 10%;
+    background-color: aqua;
+    padding: 20px;
+    width: 65%;
+}
+
+.navbar ul li{
+    gap: 10px;
+    float: left;
+}
+
+.navbar ul li a{
+    gap: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+ul li{
+    gap: 20px;
+    float: left;
+    color: coral;
+    font-size: 18px;
+}
+
+ul li a{
+    gap: 20px;
+    float: left;
+}
+
+.navbar ul{
+    gap: 20px;
+    display: flex;
+    
+}
+
+.container{
+    box-shadow: 5px solid rebeccapurple;
+    border-radius: 10px solid black;
+}

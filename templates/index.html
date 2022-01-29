@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Aljazeera News Headlines</title>
+  </head>
+  <body>
+    <div class="jumbotron" style="color: black">
+      <h1 style="color: red">Flask Web Application</h1>
+    </div>
+    <div>
+      <h4><a href="/bbc.html">BBC NEWS</a></h4>
+    </div>
+    <div class="container">
+      {% for news, desc, i,time, content,link in context %}
+
+      <img src="{{i}}" alt="" />
+      <div>
+        <h2>News:</h2>
+        {{news}}
+      </div>
+
+      <div>
+        <h3>Content</h3>
+        :{{time}}
+        <p>Click for more infor:</p>
+        {{link}}
+      </div>
+      <div>
+        <h3>Description:</h3>
+        {{desc}}
+      </div>
+      <div>
+        <h4>Time</h4>
+        :{{content}}
+      </div>
+
+      {% endfor%}
+    </div>
+  </body>
+</html>

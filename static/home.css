@@ -1,5 +1,23 @@
 .home{
-    background-image: url("../.../../static/Images/error.png");
+    background-image: url("../static/Images/newng1.jpg");
     height: 100vh;
+    width: 100%;
+    opacity: 0.9;
 
+}
+
+.para{
+    top: 20%;
+    transform: 0,-20%;
+    position: absolute;
+    margin-left: 32%;
+    color: whitesmoke;
+}
+
+.para2 p{
+    text-align: center;
+}
+
+.next{
+    float: right;
 }

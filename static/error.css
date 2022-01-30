@@ -1,4 +1,4 @@
 .error{
-    background-image: url("/app/static/Images/error.png");
+    background-image: url("../static/Images/error.png");
     height: 100vh;
 }

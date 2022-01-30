@@ -17,9 +17,6 @@ ul li{
 }
 
 #contact{
-     /* float: right; */
-     /* margin-bottom: -50%; */
-     /* text-align: center; */
      margin-top: -11%;
      margin-left: 15%;
 }
@@ -63,6 +60,70 @@ button[type=submit] {
       color: red;
   }
 
-  .contact{
-      height: 80vh;
+  * {
+    box-sizing: border-box;
   }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height: 90vh;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .back a{
+      color: #45a049;
+      padding: 10px;
+      font-size: 25px;
+      background-color: black;
+      border-radius: 10px;
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+

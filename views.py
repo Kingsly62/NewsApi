@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
 from newsapi import NewsApiClient
 
 app = Flask(__name__)
@@ -39,15 +39,31 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    request_method = request.method
+    if request.method == 'POST':
+        print('---------')
+        print(request.form)
+        print('---------')
+        return redirect(url_for('name'))
 
-    return render_template('contact.html')
+    return render_template('contact.html', request_method=request_method)
+
+
+@app.route('/name')
+def name():
+    return 'name'
 
 
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+
+@app.route('/error')
+def error():
+    return render_template('error.html')
 
 
 @app.route('/bbc')

@@ -13,20 +13,64 @@
     />
   </head>
   <body>
+    {% block content %}
     <div class="contact">
-      <h1>Contact page</h1>
-      <a href="/about">back</a>
+      <div class="back"><a href="/about">Previous</a></div>
+      <div class="next"><a href="/error">Next</a></div>
+      <div style="text-align: center">
+        <h2 style="color: red">Contact Us</h2>
+        <hr />
+        <p style="color: green">
+          Swing by for a cup of coffee, or leave us a message:
+        </p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <span>Request method- {{request_method}}</span>
+          <form method="POST" action="/contact">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your official email.."
+            />
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div id="company">
-        <h2 appCustomStyle>GitHub Searcher</h2>
+        <h2 appCustomStyle>AljaZeera News Blogging</h2>
         <hr />
         <h2>Company</h2>
         <ul>
-          <li routerLink="home">Home</li>
-          <li router="about-us">About Us</li>
+          <li routerLink="/home">Home</li>
+          <li router="/about">About Us</li>
           <li routerLink="github-search">Git-Community</li>
-          <li routerLink="contact">Contact Us</li>
+          <li routerLink="/contact">Contact Us</li>
         </ul>
         <div id="contact">
           <h2>Contact Us</h2>
@@ -61,5 +105,6 @@
         </div>
       </div>
     </div>
+    {% endblock content%}
   </body>
 </html>

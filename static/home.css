@@ -22,4 +22,19 @@
 
 .next{
     float: right;
+    float: right;
+    padding: 10px;
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.back{
+    float: right;
+    padding: 10px;
+    background-color: green;
+    color: black;
+    border-radius: 10px;
+    font-size: 25px;
 }

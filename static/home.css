@@ -31,10 +31,26 @@
 }
 
 .back{
-    float: right;
+    float: left;
     padding: 10px;
     background-color: green;
     color: black;
     border-radius: 10px;
     font-size: 25px;
 }
+
+h3{
+    color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+.start{
+    position: absolute;
+    top: 130%;
+    transform: 0,-130%;
+    background-color: red;
+}
+
+

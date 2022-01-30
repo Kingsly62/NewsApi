@@ -117,6 +117,15 @@ button[type=submit] {
       border-radius: 10px;
 
   }
+
+  .next a{
+    float: right;
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 10px;
+  }
   
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {

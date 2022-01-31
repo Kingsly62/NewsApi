@@ -10,22 +10,20 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/static/bbc.css"
     <title>BBC News Headlines</title>
   </head>
   <body>
     <div class="jumbotron" style="color: black">
       <h1 styel="color:black">BBC NEWS HEADLINE</h1>
     </div>
-
+    <div class="back"><a href="/about">Previous</a></div>
+    <div class="next"><a href="/error">Next</a></div>
     <div class="container">
-      {% for news, desc,time, i,img in context%}
+      {% for news, desc,time, i in context%}
 
       <div>
         <img src="{{i}}" alt="" />
-      </div>
-      <div>
-        <h2>{{img}}</h2>
-        :Image
       </div>
       <div>
         <h2>News:</h2>

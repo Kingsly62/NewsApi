@@ -9,6 +9,7 @@ h1{
     background-color: aqua;
     padding: 20px;
     width: 65%;
+    position: fixed;
 }
 
 .navbar ul li{
@@ -43,4 +44,5 @@ ul li a{
 .container{
     box-shadow: 5px solid rebeccapurple;
     border-radius: 10px solid black;
+    width: 50%;
 }

@@ -7,7 +7,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     newapi = NewsApiClient(api_key="0c6d46cd105a4eec899d842768e0a84e")
-    topheadlines = newapi.get_top_headlines(sources="al-jazeera-english")
+    topheadlines = newapi.get_top_headlines(
+        sources="al-jazeera-english,bbc-news")
 
     articles = topheadlines['articles']
 
@@ -53,7 +54,7 @@ def contact():
 
 @app.route('/name')
 def name():
-    return 'name'
+    return 'Successfuly submitted'
 
 
 @app.route('/about')

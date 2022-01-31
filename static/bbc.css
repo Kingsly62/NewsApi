@@ -1,0 +1,17 @@
+.back a{
+    color: #45a049;
+    padding: 10px;
+    font-size: 25px;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.next a{
+  float: right;
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  background-color: red;
+  border-radius: 10px;
+}

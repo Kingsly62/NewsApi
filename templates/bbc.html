@@ -14,20 +14,32 @@
   </head>
   <body>
     <div class="jumbotron" style="color: black">
-      <h1 styel="color:black">Flask Web Application</h1>
+      <h1 styel="color:black">BBC NEWS HEADLINE</h1>
     </div>
 
     <div class="container">
-      {% for news, desc,time, i in context%}
+      {% for news, desc,time, i,img in context%}
 
-      <img src="{{i}}" alt="" />
-      <h2>News:</h2>
-      {{news}}
-      <h3>Description:</h3>
-
-      {{desc}}
-      <h4>Time</h4>
-      :{{time}} {% endfor%}
+      <div>
+        <img src="{{i}}" alt="" />
+      </div>
+      <div>
+        <h2>{{img}}</h2>
+        :Image
+      </div>
+      <div>
+        <h2>News:</h2>
+        {{news}}
+      </div>
+      <div>
+        <h3>Description:</h3>
+        {{desc}}
+      </div>
+      <div>
+        <h4>Time</h4>
+        :{{time}}
+      </div>
+      {% endfor%}
     </div>
   </body>
 </html>

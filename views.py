@@ -69,7 +69,7 @@ def error():
 @app.route('/bbc')
 def bbc():
     newapi = NewsApiClient(api_key="0c6d46cd105a4eec899d842768e0a84e")
-    topheadlines = newapi.get_top_headlines(sources="New York Times")
+    topheadlines = newapi.get_top_headlines(sources="bbc-news")
 
     articles = topheadlines['articles']
 

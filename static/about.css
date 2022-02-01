@@ -20,3 +20,54 @@ h2{
     color: bisque;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+#about{
+    background-image: url("../static/Images/newng1.jpg");
+    padding: 40px;
+    top: 10%;
+    transform: 0,-10%;
+    position: absolute;
+    width: 100%;
+
+}
+
+h1{
+    text-align: center;
+    color: aqua;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: center;
+    color: aqua;
+}
+
+.who{
+    top: 43%;
+    transform: 0,-43%;
+    position: absolute;
+    width: 100%;
+
+}
+
+h2{
+    text-align: center;
+    color: red;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+     align-items: center;
+     align-content: center;
+}
+
+.news{
+    display: flex;
+    top: 60%;
+    transform: 0,-60%;
+    position: absolute;
+    gap: 45%;
+}
+
+#new3{
+    float: right;
+}

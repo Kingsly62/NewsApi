@@ -4,7 +4,7 @@ from newsapi import NewsApiClient
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/alja')
 def index():
     newapi = NewsApiClient(api_key="0c6d46cd105a4eec899d842768e0a84e")
     topheadlines = newapi.get_top_headlines(
@@ -34,6 +34,11 @@ def index():
     return render_template('index.html', context=mylist)
 
 
+@app.route('/')
+def blog():
+    return render_template('blog.html')
+
+
 @app.route('/home')
 def home():
 
@@ -54,7 +59,7 @@ def contact():
 
 @app.route('/name')
 def name():
-    return 'Successfuly submitted'
+    return render_template('submit.html')
 
 
 @app.route('/about')

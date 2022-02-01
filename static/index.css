@@ -46,3 +46,9 @@ ul li a{
     border-radius: 10px solid black;
     width: 50%;
 }
+
+.logout{
+    float: left;
+    border-style: none;
+}
+

@@ -1,0 +1,31 @@
+h1{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+h4 a{
+    color: #45a049;
+    padding: 10px;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+h4{
+    text-align: center;
+}
+
+.welcome{
+    padding: 80px;
+    background-color: aqua;
+    width: 70%;
+    margin-left: 10%;
+    top: 30%;
+    transform: 0,-50%;
+    position: absolute;
+    border-radius: 20px;
+}

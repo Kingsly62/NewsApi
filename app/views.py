@@ -1,12 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for
 from newsapi import NewsApiClient
+API_KEY = "0c6d46cd105a4eec899d842768e0a84e"
 
 app = Flask(__name__)
 
 
 @app.route('/alja')
 def index():
-    newapi = NewsApiClient(api_key="0c6d46cd105a4eec899d842768e0a84e")
+    newapi = NewsApiClient(API_KEY="0c6d46cd105a4eec899d842768e0a84e")
     topheadlines = newapi.get_top_headlines(
         sources="al-jazeera-english,bbc-news")
 
@@ -74,7 +75,7 @@ def error():
 
 @app.route('/bbc')
 def bbc():
-    newapi = NewsApiClient(api_key="0c6d46cd105a4eec899d842768e0a84e")
+    newapi = NewsApiClient(API_KEY="0c6d46cd105a4eec899d842768e0a84e")
     topheadlines = newapi.get_top_headlines(sources="bbc-news")
 
     articles = topheadlines['articles']

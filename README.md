@@ -16,6 +16,10 @@ These are the behaviours/features that the application implements for use by a u
 - Receiives daily news updates
 - Get more news from different countries as it updates it self.
 
+### Link to my Github Account(project)
+
+Get started:https://github.com/Kingsly62/NewsApi
+
 ### SetUp / Installation Requirements
 
 - $ pip install flask

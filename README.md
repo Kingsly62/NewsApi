@@ -50,8 +50,7 @@ To run the application, in your terminal:
 - $ source virtual/bin/activate
 - $ pip install flask
 - $ curl https://bootstrap.pypa.io/get-pip.py | python3.9
-- $ cd app
-- $ views.py
+- $python3 main.py
 
 ### Technologies Used
 

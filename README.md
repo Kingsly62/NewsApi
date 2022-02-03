@@ -28,12 +28,12 @@ Get started:https://github.com/Kingsly62/NewsApi
 
 - $ pip install flask
 - $ pip install newsapi-python
+- $ pip install gunicorn
 
 ##### Prerequisites
 
 - python3.9
 - pip
-- Bootstrap
 
 ### Cloning
 

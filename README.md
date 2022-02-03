@@ -22,7 +22,7 @@ Get started:https://github.com/Kingsly62/NewsApi
 
 ### Heroku live link to my website
 
-[Click]()
+[Click](https://mak-news.herokuapp.com/)
 
 ### SetUp / Installation Requirements
 

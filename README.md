@@ -40,7 +40,7 @@ Get started:https://github.com/Kingsly62/NewsApi
 In your terminal:
 
 - $ git clone
-- $ cd app
+- $ cd NewsApi
 
 ### Running the Application
 
